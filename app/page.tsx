@@ -15,7 +15,7 @@ const categories = [
       "Hammers",
       "Many more",
     ],
-    tone: "bg-emerald-500/20 text-emerald-200 ring-emerald-400/40",
+    tone: "bg-emerald-500/15 text-emerald-800 ring-emerald-400/50",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path
@@ -38,7 +38,7 @@ const categories = [
       "PP primer",
       "Many more",
     ],
-    tone: "bg-amber-500/20 text-amber-200 ring-amber-400/40",
+    tone: "bg-emerald-500/15 text-emerald-800 ring-emerald-400/50",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path d="M6 3h6l7 7-6 6-7-7V3z" fill="currentColor" />
@@ -57,7 +57,7 @@ const categories = [
       "Tank",
       "Many more",
     ],
-    tone: "bg-sky-500/20 text-sky-200 ring-sky-400/40",
+    tone: "bg-emerald-500/15 text-emerald-800 ring-emerald-400/50",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path
@@ -70,7 +70,7 @@ const categories = [
   {
     title: "Electrical Supplies",
     items: ["Wires", "Switches", "Conduits", "Installation gear", "Many more"],
-    tone: "bg-fuchsia-500/20 text-fuchsia-200 ring-fuchsia-400/40",
+    tone: "bg-emerald-500/15 text-emerald-800 ring-emerald-400/50",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path d="M13 2 5 13h6l-1 9 8-11h-6l1-9z" fill="currentColor" />
@@ -80,7 +80,7 @@ const categories = [
   {
     title: "Fasteners & Fixings",
     items: ["Nails", "Screws", "Anchors", "Adhesives", "Sealants"],
-    tone: "bg-rose-500/20 text-rose-200 ring-rose-400/40",
+    tone: "bg-emerald-500/15 text-emerald-800 ring-emerald-400/50",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path d="M7 6h10v3H7V6zm-1 4h12l-2 8H8l-2-8z" fill="currentColor" />
@@ -90,7 +90,7 @@ const categories = [
   {
     title: "Safety & Workwear",
     items: ["Gloves", "Masks", "Helmets", "Workshop protection"],
-    tone: "bg-teal-500/20 text-teal-200 ring-teal-400/40",
+    tone: "bg-emerald-500/15 text-emerald-800 ring-emerald-400/50",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path
@@ -105,51 +105,51 @@ const categories = [
 const brands = [
   {
     name: "Asian Paints",
-    badge: "bg-rose-500/20 text-rose-200 ring-rose-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Nippon Paints",
-    badge: "bg-indigo-500/20 text-indigo-200 ring-indigo-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Berger Paints",
-    badge: "bg-amber-500/20 text-amber-200 ring-amber-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Premeir",
-    badge: "bg-emerald-500/20 text-emerald-200 ring-emerald-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Fevicol",
-    badge: "bg-sky-500/20 text-sky-200 ring-sky-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Pidilite",
-    badge: "bg-fuchsia-500/20 text-fuchsia-200 ring-fuchsia-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Link Locks",
-    badge: "bg-teal-500/20 text-teal-200 ring-teal-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Mangalam Rods",
-    badge: "bg-lime-500/20 text-lime-200 ring-lime-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Captain Rods",
-    badge: "bg-orange-500/20 text-orange-200 ring-orange-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "AutoCoat PPG",
-    badge: "bg-cyan-500/20 text-cyan-200 ring-cyan-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Nerolac",
-    badge: "bg-violet-500/20 text-violet-200 ring-violet-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
   {
     name: "Utsav",
-    badge: "bg-yellow-500/20 text-yellow-200 ring-yellow-400/40",
+    badge: "bg-emerald-500/35 text-emerald-800 ring-emerald-500/60",
   },
 ];
 
@@ -198,31 +198,63 @@ export default function Home() {
 
   return (
     <main className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 grid-dots opacity-40" />
-      <header className="mx-auto w-full max-w-6xl px-6 py-12">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h1 className="headline-slab mt-3 text-4xl font-semibold text-ink sm:text-5xl">
-              <span className="title-glow inline-flex items-center rounded-full px-5 py-2">
-                Akash Hardware Store
-              </span>
-            </h1>
+      <div className="absolute inset-x-0 top-0 -z-10 h-[110vh] bg-gradient-to-b from-emerald-50/70 via-transparent to-transparent" />
+      <div className="absolute inset-0 z-0 grid-dots opacity-40" />
+      <header className="mx-auto w-full max-w-7xl px-6 py-12">
+        <div className="flex flex-col gap-7 rounded-[32px] border border-emerald-200/70 bg-gradient-to-br from-emerald-50/80 via-white/90 to-emerald-100/70 px-9 py-8 shadow-deep md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-5">
+            <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-emerald-500/20 text-emerald-900 ring-1 ring-emerald-200/80">
+              <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
+                <path
+                  d="M4 10l8-6 8 6v8a2 2 0 0 1-2 2h-4v-6H10v6H6a2 2 0 0 1-2-2v-8z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.4em] text-emerald-700">
+                Hardware + Paints
+              </p>
+              <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">
+                <span className="relative inline-flex items-center">
+                  <span className="absolute -inset-x-3 -bottom-2 h-3 rounded-full bg-emerald-200/80" />
+                  <span className="relative whitespace-nowrap text-emerald-900">
+                    Akash Hardware Store
+                  </span>
+                </span>
+              </h1>
+              <p className="mt-3 max-w-xl text-sm text-stone-600 sm:text-base">
+                Tools, paints, fittings, and fasteners with a local-first service touch.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-wrap items-center gap-4">
-            <nav className="flex flex-wrap items-center gap-4 text-lg font-semibold text-ink">
+          <div className="flex flex-wrap items-center gap-3 md:gap-4">
+            <nav className="flex flex-wrap items-center gap-3 text-sm font-semibold text-emerald-900 sm:text-base md:gap-4">
               <a
-                className="rounded-full border border-emerald-400/40 bg-emerald-500/15 px-5 py-3 text-lg font-semibold text-emerald-100 transition hover:border-emerald-300 hover:bg-emerald-500/25"
+                className="rounded-full border border-emerald-300/70 bg-white px-4 py-2 transition hover:border-emerald-400 hover:bg-emerald-50"
                 href="#address"
               >
                 Address
               </a>
               <a
-                className="rounded-full border border-indigo-400/40 bg-indigo-500/15 px-5 py-3 text-lg font-semibold text-indigo-100 transition hover:border-indigo-300 hover:bg-indigo-500/25"
+                className="rounded-full border border-emerald-300/70 bg-white px-4 py-2 transition hover:border-emerald-400 hover:bg-emerald-50"
+                href="#categories"
+              >
+                Products
+              </a>
+              <a
+                className="rounded-full border border-emerald-300/70 bg-white px-4 py-2 transition hover:border-emerald-400 hover:bg-emerald-50"
                 href="#contact"
               >
                 Contact
               </a>
             </nav>
+            <a
+              className="rounded-full bg-emerald-900 px-5 py-2.5 text-sm font-semibold text-white shadow-deep transition hover:bg-emerald-800 sm:text-base"
+              href="tel:9934987856"
+            >
+              Call Now
+            </a>
           </div>
         </div>
       </header>
@@ -231,7 +263,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4 lg:items-start">
           <div className="relative">
             <div className="absolute -inset-6 rounded-full bg-indigo-500/15 blur-2xl" />
-            <div className="relative h-56 w-56 overflow-hidden rounded-full ring-4 ring-indigo-400/60 shadow-[0_0_60px_rgba(99,102,241,0.45)] sm:h-64 sm:w-64">
+            <div className="relative h-64 w-64 overflow-hidden rounded-full ring-4 ring-indigo-400/60 shadow-[0_0_60px_rgba(99,102,241,0.45)] sm:h-80 sm:w-80">
               <img
                 src="/owner.png"
                 alt="Arvind Kumar Singh"
@@ -240,7 +272,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center lg:text-left">
-            <p className="text-xs uppercase tracking-[0.35em] text-stone-400">
+            <p className="text-xs uppercase tracking-[0.35em] text-stone-600">
               Owner
             </p>
             <p className="mt-2 text-2xl font-semibold text-ink">
@@ -250,9 +282,9 @@ export default function Home() {
         </div>
         <div>
           <h2 className="mt-4 text-4xl font-semibold leading-tight text-ink sm:text-5xl">
-            Hi, we're <span className="text-indigo-300">Akash Hardware</span>
+            Hi, we're <span className="text-emerald-700">Akash Hardware</span>
           </h2>
-          <p className="mt-3 text-base text-stone-300 sm:text-lg">
+          <p className="mt-3 text-base text-stone-700 sm:text-lg">
             Trusted building supplies, tools, paints, and fittings for every work.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -263,7 +295,7 @@ export default function Home() {
               Call Now
             </a>
             <a
-              className="rounded-full border border-emerald-900/50 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:border-emerald-900 hover:bg-emerald-900 hover:text-white"
+              className="rounded-full border border-emerald-900/50 px-6 py-3 text-sm font-semibold text-emerald-900 transition hover:border-emerald-900 hover:bg-emerald-900 hover:text-white"
               href="https://maps.app.goo.gl/jRp5jsU9Whnd1VDNA"
               target="_blank"
               rel="noreferrer"
@@ -271,14 +303,14 @@ export default function Home() {
               Get Directions
             </a>
           </div>
-          <p className="mt-6 text-2xl font-semibold text-emerald-200 sm:text-3xl leading-relaxed">
-            <span className="rounded-2xl bg-emerald-500/20 px-2 py-1 text-4xl sm:text-5xl text-emerald-100">
+          <p className="mt-6 text-2xl font-semibold text-emerald-800 sm:text-3xl leading-relaxed">
+            <span className="rounded-2xl bg-emerald-500/20 px-2 py-1 text-4xl sm:text-5xl text-emerald-900">
               27+
             </span>{" "}
             सालों का भरोसा। हम आपके मूल्यों का सम्मान करते हैं.
           </p>
-          <p className="mt-6 text-xl font-semibold text-stone-200 sm:text-2xl leading-relaxed">
-            <span className="rounded-2xl bg-indigo-500/20 px-2 py-1 text-3xl font-semibold sm:text-4xl text-indigo-100">
+          <p className="mt-6 text-xl font-semibold text-stone-700 sm:text-2xl leading-relaxed">
+            <span className="rounded-2xl bg-emerald-500/20 px-2 py-1 text-3xl font-semibold sm:text-4xl text-emerald-900">
               10,000+
             </span>{" "}
             लग्ज़री कारों और बाइक्स को बेहतरीन डिज़ाइन और पेंटिंग दी गई है
@@ -287,8 +319,8 @@ export default function Home() {
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-6 pb-16">
-        <div className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-black/70 shadow-deep">
-          <div className="absolute left-4 top-4 z-10 rounded-full border border-white/20 bg-black/60 px-4 py-2 text-xs uppercase tracking-[0.35em] text-emerald-200">
+        <div className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl border border-emerald-200/60 bg-white/70 shadow-deep">
+          <div className="absolute left-4 top-4 z-10 rounded-full border border-emerald-200/70 bg-white/80 px-4 py-2 text-xs uppercase tracking-[0.35em] text-emerald-900">
             Store Highlights
           </div>
           <div className="carousel-window h-[260px] sm:h-[320px]">
@@ -303,7 +335,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-transparent to-emerald-900/10" />
           <button
             type="button"
             onClick={() =>
@@ -311,7 +343,7 @@ export default function Home() {
                 (slideIndex - 1 + carouselImages.length) % carouselImages.length
               )
             }
-            className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/60 px-4 py-2 text-sm font-semibold text-white transition hover:bg-black/80"
+            className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full border border-emerald-200/70 bg-white/90 px-4 py-2 text-sm font-semibold text-emerald-900 transition hover:bg-white"
             aria-label="Previous slide"
           >
             &lt;
@@ -319,7 +351,7 @@ export default function Home() {
           <button
             type="button"
             onClick={() => setSlideIndex((slideIndex + 1) % carouselImages.length)}
-            className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/60 px-4 py-2 text-sm font-semibold text-white transition hover:bg-black/80"
+            className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full border border-emerald-200/70 bg-white/90 px-4 py-2 text-sm font-semibold text-emerald-900 transition hover:bg-white"
             aria-label="Next slide"
           >
             &gt;
@@ -327,18 +359,18 @@ export default function Home() {
         </div>
       </section>
       <div className="mx-auto w-full max-w-6xl px-6 pb-10 pt-2">
-        <div className="h-[2px] w-full bg-white/40" />
+        <div className="h-[2px] w-full bg-emerald-200/70" />
       </div>
 
       <section id="address" className="mx-auto w-full max-w-6xl px-6 pb-16">
-        <div className="rounded-3xl border border-emerald-400/40 bg-emerald-500/10 p-6 shadow-deep">
+        <div className="rounded-3xl border border-emerald-900/25 bg-emerald-950/80 p-6 text-white shadow-deep">
           <p className="text-xs uppercase tracking-[0.35em] text-emerald-200">
             Address
           </p>
-          <h3 className="mt-3 text-2xl font-semibold text-ink">
+          <h3 className="mt-3 text-2xl font-semibold text-white">
             Visit Akash Hardware Store
           </h3>
-          <p className="mt-3 text-base text-stone-200">
+          <p className="mt-3 text-base text-emerald-100">
             Akash Hardware Store, in front of Ara Machine, Amnour Road, near
             Dhenuki Chowk.
             <br />
@@ -351,7 +383,7 @@ export default function Home() {
             Pincode - 841418
           </p>
           <a
-            className="mt-4 inline-flex items-center rounded-full border border-emerald-400/50 bg-emerald-500/15 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:border-emerald-300 hover:bg-emerald-500/25"
+            className="mt-4 inline-flex items-center rounded-full border border-emerald-300/50 bg-emerald-500/15 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:border-emerald-200 hover:bg-emerald-500/25"
             href="https://maps.app.goo.gl/jRp5jsU9Whnd1VDNA"
             target="_blank"
             rel="noreferrer"
@@ -361,7 +393,7 @@ export default function Home() {
         </div>
       </section>
       <div className="mx-auto w-full max-w-6xl px-6 pb-12 pt-4">
-        <div className="h-[2px] w-full bg-white/40" />
+        <div className="h-[2px] w-full bg-emerald-200/70" />
       </div>
 
       <section id="categories" className="mx-auto w-full max-w-6xl px-6 pb-20">
@@ -382,23 +414,23 @@ export default function Home() {
           {categories.map((item) => (
             <div
               key={item.title}
-              className="surface group rounded-3xl p-6 transition hover:-translate-y-1 hover:shadow-deep"
+              className="group rounded-3xl border border-emerald-900/25 bg-emerald-950/80 p-6 text-white shadow-deep transition hover:-translate-y-1"
             >
               <div
-                className={`flex h-12 w-12 items-center justify-center rounded-2xl ring-2 ring-white/30 ${item.tone}`}
+                className={`flex h-12 w-12 items-center justify-center rounded-2xl ring-2 ring-white/20 bg-emerald-500/15 text-emerald-100`}
               >
                 {item.icon}
               </div>
-              <h3 className="mt-4 text-xl font-semibold text-ink">{item.title}</h3>
-              <ul className="mt-3 space-y-1 text-sm text-stone-200">
+              <h3 className="mt-4 text-xl font-semibold text-white">{item.title}</h3>
+              <ul className="mt-3 space-y-1 text-sm text-emerald-100">
                 {item.items.map((entry) => (
                   <li key={entry} className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-emerald-200" />
+                    <span className="mt-1 h-2 w-2 rounded-full bg-emerald-300" />
                     <span>{entry}</span>
                   </li>
                 ))}
               </ul>
-              <button className="mt-6 text-sm font-semibold text-emerald-900">
+              <button className="mt-6 text-sm font-semibold text-emerald-200">
                 View range
               </button>
             </div>
@@ -446,7 +478,7 @@ export default function Home() {
           {team.map((member) => (
             <div
               key={member.name}
-              className="surface rounded-3xl p-6 text-center shadow-deep"
+              className="rounded-3xl border border-emerald-900/25 bg-emerald-950/80 p-6 text-center text-white shadow-deep"
             >
               <div className="mx-auto h-40 w-40 overflow-hidden rounded-3xl ring-1 ring-white/20">
                 <img
@@ -455,11 +487,11 @@ export default function Home() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <p className="mt-4 text-lg font-semibold text-ink">{member.name}</p>
-              <p className="mt-2 text-sm uppercase tracking-[0.2em] text-emerald-900">
+              <p className="mt-4 text-lg font-semibold text-white">{member.name}</p>
+              <p className="mt-2 text-sm uppercase tracking-[0.2em] text-emerald-200">
                 {member.role}
               </p>
-              <p className="mt-3 text-sm font-semibold text-stone-400">
+              <p className="mt-3 text-sm font-semibold text-emerald-100">
                 {member.phone}
               </p>
             </div>
