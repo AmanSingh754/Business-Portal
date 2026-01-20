@@ -198,10 +198,11 @@ export default function Home() {
 
   return (
     <main className="relative overflow-hidden">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[110vh] bg-gradient-to-b from-emerald-50/70 via-transparent to-transparent" />
-      <div className="absolute inset-0 z-0 grid-dots opacity-40" />
-      <header className="mx-auto w-full max-w-7xl px-6 py-12">
-        <div className="flex flex-col gap-7 rounded-[32px] border border-emerald-200/70 bg-gradient-to-br from-emerald-50/80 via-white/90 to-emerald-100/70 px-9 py-8 shadow-deep md:flex-row md:items-center md:justify-between">
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[110vh] bg-gradient-to-b from-emerald-50/70 via-transparent to-transparent" />
+      <div className="pointer-events-none absolute inset-0 z-0 grid-dots opacity-40" />
+      <div className="relative z-10">
+      <header className="mx-auto w-full max-w-7xl px-6 py-10 sm:py-12">
+        <div className="flex flex-col gap-7 rounded-[32px] border border-emerald-200/70 bg-gradient-to-br from-emerald-50/80 via-white/90 to-emerald-100/70 px-6 py-8 shadow-deep sm:px-9 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-5">
             <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-emerald-500/20 text-emerald-900 ring-1 ring-emerald-200/80">
               <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
@@ -218,7 +219,7 @@ export default function Home() {
               <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">
                 <span className="relative inline-flex items-center">
                   <span className="absolute -inset-x-3 -bottom-2 h-3 rounded-full bg-emerald-200/80" />
-                  <span className="relative whitespace-nowrap text-emerald-900">
+                  <span className="relative whitespace-normal text-emerald-900 sm:whitespace-nowrap">
                     Akash Hardware Store
                   </span>
                 </span>
@@ -250,7 +251,7 @@ export default function Home() {
               </a>
             </nav>
             <a
-              className="rounded-full bg-emerald-900 px-5 py-2.5 text-sm font-semibold text-white shadow-deep transition hover:bg-emerald-800 sm:text-base"
+              className="rounded-full bg-emerald-900 px-4 py-2 text-sm font-semibold text-white shadow-deep transition hover:bg-emerald-800 sm:px-5 sm:py-2.5 sm:text-base"
               href="tel:9934987856"
             >
               Call Now
@@ -263,7 +264,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4 lg:items-start">
           <div className="relative">
             <div className="absolute -inset-6 rounded-full bg-indigo-500/15 blur-2xl" />
-            <div className="relative h-64 w-64 overflow-hidden rounded-full ring-4 ring-indigo-400/60 shadow-[0_0_60px_rgba(99,102,241,0.45)] sm:h-80 sm:w-80">
+            <div className="relative h-56 w-56 overflow-hidden rounded-full ring-4 ring-indigo-400/60 shadow-[0_0_60px_rgba(99,102,241,0.45)] sm:h-80 sm:w-80">
               <img
                 src="/owner.png"
                 alt="Arvind Kumar Singh"
@@ -289,13 +290,13 @@ export default function Home() {
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a
-              className="rounded-full bg-emerald-900 px-6 py-3 text-sm font-semibold text-white shadow-deep transition hover:bg-emerald-800"
+              className="rounded-full bg-emerald-900 px-5 py-2.5 text-sm font-semibold text-white shadow-deep transition hover:bg-emerald-800 sm:px-6 sm:py-3"
               href="tel:9934987856"
             >
               Call Now
             </a>
             <a
-              className="rounded-full border border-emerald-900/50 px-6 py-3 text-sm font-semibold text-emerald-900 transition hover:border-emerald-900 hover:bg-emerald-900 hover:text-white"
+              className="rounded-full border border-emerald-900/50 px-5 py-2.5 text-sm font-semibold text-emerald-900 transition hover:border-emerald-900 hover:bg-emerald-900 hover:text-white sm:px-6 sm:py-3"
               href="https://maps.app.goo.gl/jRp5jsU9Whnd1VDNA"
               target="_blank"
               rel="noreferrer"
@@ -303,14 +304,14 @@ export default function Home() {
               Get Directions
             </a>
           </div>
-          <p className="mt-6 text-2xl font-semibold text-emerald-800 sm:text-3xl leading-relaxed">
-            <span className="rounded-2xl bg-emerald-500/20 px-2 py-1 text-4xl sm:text-5xl text-emerald-900">
+          <p className="mt-6 break-words text-xl font-semibold text-emerald-800 sm:text-2xl leading-relaxed">
+            <span className="rounded-2xl bg-emerald-500/20 px-2 py-1 text-3xl sm:text-4xl text-emerald-900">
               27+
             </span>{" "}
             सालों का भरोसा। हम आपके मूल्यों का सम्मान करते हैं.
           </p>
-          <p className="mt-6 text-xl font-semibold text-stone-700 sm:text-2xl leading-relaxed">
-            <span className="rounded-2xl bg-emerald-500/20 px-2 py-1 text-3xl font-semibold sm:text-4xl text-emerald-900">
+          <p className="mt-6 break-words text-lg font-semibold text-stone-700 sm:text-xl leading-relaxed">
+            <span className="rounded-2xl bg-emerald-500/20 px-2 py-1 text-2xl font-semibold sm:text-3xl text-emerald-900">
               10,000+
             </span>{" "}
             लग्ज़री कारों और बाइक्स को बेहतरीन डिज़ाइन और पेंटिंग दी गई है
@@ -370,7 +371,7 @@ export default function Home() {
           <h3 className="mt-3 text-2xl font-semibold text-white">
             Visit Akash Hardware Store
           </h3>
-          <p className="mt-3 text-base text-emerald-100">
+          <p className="mt-3 break-words text-base text-emerald-100">
             Akash Hardware Store, in front of Ara Machine, Amnour Road, near
             Dhenuki Chowk.
             <br />
@@ -507,15 +508,38 @@ export default function Home() {
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-stone-500">Contact</p>
-            <p className="mt-2 text-emerald-200">9934987856</p>
-            <p className="text-emerald-200">7808507257</p>
-            <p className="text-emerald-200">7544029668</p>
-            <p className="mt-2 text-emerald-200">singhrajputanaaman@gmail.com</p>
+            <a
+              className="mt-2 block font-semibold text-emerald-200 hover:text-emerald-100"
+              href="tel:9934987856"
+            >
+              9934987856
+            </a>
+            <a
+              className="block font-semibold text-emerald-200 hover:text-emerald-100"
+              href="tel:7808507257"
+            >
+              7808507257
+            </a>
+            <a
+              className="block font-semibold text-emerald-200 hover:text-emerald-100"
+              href="tel:7544029668"
+            >
+              7544029668
+            </a>
+            <a
+              className="mt-2 inline-flex break-words font-semibold text-emerald-200 hover:text-emerald-100"
+              href="mailto:singhrajputanaaman@gmail.com"
+            >
+              singhrajputanaaman@gmail.com
+            </a>
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-stone-500">Address</p>
-            <p className="mt-2">Akash Hardware Store, in front of Ara Machine, Amnour Road, near Dhenuki Chowk.</p>
-            <p className="mt-2">PO/PS - Marhowrah</p>
+            <p className="mt-2 break-words">
+              Akash Hardware Store, in front of Ara Machine, Amnour Road, near
+              Dhenuki Chowk.
+            </p>
+            <p className="mt-2 break-words">PO/PS - Marhowrah</p>
             <p>Dist - Saran</p>
             <p>State - Bihar</p>
             <p>Pincode - 841418</p>
@@ -558,6 +582,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      </div>
     </main>
   );
 }
